@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Padauk&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/headerOtherPages.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/commands.css">
+    <link rel="icon" href="../images/icon.png"  type="image/x-icon">
+    
+    <title>POP3 команди</title>
+    <style>
+
+
+
+    </style>
+
+</head>
+<body>
+    <header name="top">
+        <ul class="main-menu">
+        
+          <li class="menu_optional sub"><a class="active" href="../index.html" title="Начало">Начало</a></li>
+          <li class="menu_optional"><a class="non-active" href="../pages/resource.html"  title="Ресурси">Използвани ресурси</a></li>
+
+          <li class="menu_optional home"><a class="non-active"  href="../pages/contact.html"  title="Kонтакти">Контакти</a></li>
+        </ul>
+  </header>
+  <hr>
+  <main class="main">
+    <div class="img_aboutUs">
+        <h1>POP3 команди</h1>
+    </div>
+    
+    <!-- <div class ="model"></div> -->
+    
+    <div class="com">
+        <section class="commands commands1 ">
+     
+            <button type="button" class="collapsible">USER <име на ПК></button>
+            <div class="content">
+              <p>Потребителят въвежда името на своята пощенска кутия. Ако тя съществува сървърът връща "+OK" и клиентът може да продължи със следващата команда PASS. В противен случай съвърът връща "-ERR" и отново трябва да се изпрати USER командата с валиден аргумент.</p>
+            </div>
+        </section>
+        
+        <section class="commands">
+            <button type="button" class="collapsible">PASS <парола></button>
+            <div class="content">
+              <p>След получаване на командите USER и PASS, POP3 сървърът използва техните аргументи, за да одобри потребителя и да го допусне до заявената пощенска кутия.</p>
+            </div>
+        </section>
+
+        <section class="commands commands1">
+            <button type="button" class="collapsible">STAT</button>
+            <div class="content">
+              <p>POP3 сървърът отговаря положително с "+ОК" и добавя текущото състояние на пощенската кутия - общия борй писма и техният общ размер в байтове<p>
+            </div>
+        </section>
+        <section class="commands  ">
+            <button type="button" class="collapsible">LIST <номер на писмо></button>
+            <div class="content">
+              <p>POP3 сървърът изпраща като отговор един ред, съдържащ номера на писмото и размера му в байтове. При липса на аргумент отговорът съдържа по един ред информация за всяко писмо от пощенската кутия</p>
+            </div>
+        </section>
+        <section class="commands commands1">
+            <button type="button" class="collapsible">RETR <номер на писмо></button>
+            <div class="content">
+              <p>RETR е командата за прочитане на писмо. Отговорът е съставен от няколко реда - начален положителен отговор ("+OK"), следван от съдържанието на заявеното писмо, завършващо със служебен ред за край, съдържащ една точка.</p>
+            </div>
+        </section>
+        <section class="commands ">
+            <button type="button" class="collapsible">DELE <номер на писмо></button>
+            <div class="content">
+              <p>Сървърът маркира посоченото писмо като изтрито. Всички последващи обръщения генерират отрицателен отговор. Същинското изтриване ще бъде реализирано, когато сесията влезе в UPDATE състояние.</p>
+            </div>
+        </section>
+        <section class="commands commands1">
+            <button type="button" class="collapsible">NOOP</button>
+            <div class="content">
+              <p>Сървърът не извършва действия и връща положителен отговор.</p>
+            </div>
+        </section>
+        <section class="commands">
+            <button type="button" class="collapsible">RSET</button>
+            <div class="content">
+             <p>POP3 сървърът размаркира обявените за изтриване писма и връща положителен отговор.</p>
+            </div>
+        </section>
+        <section class="commands commands1">
+            <button type="button" class="collapsible">QUIT</button>
+            <div class="content">
+               <p>POP3 съръвърт изтрива от пощенската кутия обявените за изтриване писма чрез командата DELE и връща отговор за обновеното състояние.</p>
+             </div>
+        </section>
+        <section class="commands ">
+            <button type="button" class="collapsible">TOP <номер на писмо> <брой редове></button>
+            <div class="content">
+              <p>Отговорът съдържа множество редове - начална последоватленост "+ОК", заглавна част на заявеното писмо, един празен ред и първите редове от тялото на писмото, завършващи със служебен ред за край, съдържащ една точка.</p>
+             </div>
+        </section>
+        <section class="commands commands1">
+            <button type="button" class="collapsible">UIDL <номер на писмо></button>
+            <div class="content">
+              <p>POP3 сървърът изпраща един ред информация, съдържаща номера на писмото и неговия уникален идентификатор. Ако в командата не е указан номер на писмо, сървърът връща по един ред такава информация за всяко писмо в пощенската кутия.</p>
+             </div>
+        </section>
+        <section class="commands">
+            <button type="button" class="collapsible">APOP <име на пощенска кутия> <контролна сума></button>
+            <div class="content last">
+                <p>Обикновено всяка сесия започва с командите USER и PASS, където потребителската парола се предава в оригиналния си текстов вид по мрежата. Командата APOP позволява изпращане на паролата в кодиран вид. Всеки POP3 сървър, поддържащ командата APOP включва в своето приветстващо съобщение символен низ, наречен марка за време (timestamp).Марката за време е различна за всяко приветстващо съобщение. POP3 клиентът запомня марката за време и издава командата APOP. В нея името на пощенската кутия се предава в "прав текст". Контролната сума (16 байта) се изчислява по криптиращия алгоритъм MD5, като се тръгва от начален символен низ, съставен от марката за време и паролата.</p>
+            </div>
+        </section>
+    </div>
+    </main>
+ 
+    
+
+
+    <div class="arrow">
+      <a href="../index.html" title="Kъм началото"><i class="fas fa-arrow-circle-left"></i></a>
+    <a href="#top" title="Нагоре" > <i class="fas fa-arrow-circle-up"></i></a>
+    <a href="../pages/compare.html" title="Kъм POP3 vs IMAP" ><i class="fas fa-arrow-circle-right"></i></a>
+    
+    </div>
+    
+   
+  <footer>
+    <div class="conteiner">
+       <p class="conteiner_item name">POP3</p>
+       <p class=" conteiner_item copy-right">2020<span class="name_author">Рая Благоева</span> </p>
+       <div class="icons">
+          <a href="https://www.facebook.com/raq.blagoeva" title="Facebook" target="_blank"><i class="icon fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/raiablagoeva/" title="Instagram" target="_blank"><i class="icon fab fa-instagram"></i></a>
+          <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJNvNQnkgrwRzsvNhzljLTBNQgWSrrKvnZtZMVHwmdzPRdXHGjPncZHRVkTVvkjrCLZHKsq" title="Mail" target="_blank"><i class="icon far fa-envelope"></i></a>
+       </div> 
+    </div>
+ </footer>
+ 
+</body>
+
+</html>

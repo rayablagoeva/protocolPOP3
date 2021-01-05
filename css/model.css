@@ -1,0 +1,154 @@
+html {
+    scroll-behavior: smooth;
+  }
+  .fas{
+    font-size: 40px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    color: #386929;
+  }
+  .arrow{
+     margin-left: 2em;
+     margin-right: 2em;
+  }
+  .fas:hover{
+    color: #151f12;
+  }
+  .fa-arrow-circle-right{
+    float: right;
+    
+  }
+  
+  
+  
+        body{
+    margin: 0em;
+        }
+     
+     h3{
+       width: 70vw;
+       font-size: 30px;
+       /* border: 1px solid red; */
+       text-transform: uppercase;
+       text-align: center;
+       margin: 2em auto;
+       margin-bottom: 1em;
+       
+     }
+  
+  
+  
+  
+  
+  #container{
+      width: 70vw;
+      margin: 0 auto;
+    text-align:center;
+    /* border: 1px springgreen solid; */
+    margin-bottom: 2em;
+  }
+  
+  .whole{
+      display: inline-block;
+    vertical-align: middle;
+    
+  }
+  
+  
+  
+  .type{
+      width: 300px;
+      border-radius: 5px 5px 0px 0px;
+      background-color: #3a9623;
+      height: 62px;
+      border-bottom: 3px solid #10e010;
+    
+  
+  }
+  
+  .type p{
+      font-family:'Open Sans';
+      font-weight: 800;
+      font-size: 29px;
+      text-transform: uppercase;
+      color: white;
+      text-align: center;
+      padding-top: 10px;
+  
+      
+  
+  }
+  
+  .plan{
+      width: 300px;
+      background-color: #2b2937;
+  
+      border-radius: 0px 0px 5px 5px;
+      font-family:'Open Sans';
+      font-style:condensed;
+      font-size: 90px;
+      color: white;
+      text-align: center;
+      
+  
+  
+  }
+  
+  
+  
+  
+  
+  
+  .header{
+      border-bottom: 1px solid #494a5a;
+      /* padding-bottom: 39px; */
+      /* border: 1px solid red; */
+      height: 16em;
+      font-size: 18px;
+      padding: 1em 2em;
+      
+  
+  
+  }
+  
+   .model{
+              width: 40vw;
+              height: 30vh;
+              float: right;
+              text-align: center;
+              
+  
+    }
+   .desc{
+              /* border: 1px solid yellow; */
+              width: 85vw;
+              height: 50vh;
+              margin: 0 auto;
+              margin-bottom: 3em;
+              /* margin-top: -4em; */
+              /* background-color: #2ac44970; */
+              /* float: left; */
+          
+              padding: 0 2em;
+    
+          }
+          .pop{
+              text-align: center;
+              font-size: 30px;
+              margin-top: 1em;
+              text-transform: uppercase;
+          }
+          .desc p {
+              font-size: 20px; 
+              display: block;
+              float: left;
+              text-transform: uppercase;
+              width: 40vw;
+              /* border: 1px solid red; */
+              
+              text-align:center;
+              font-weight: 400;
+          }
+          .clear {
+    clear: both;
+  }

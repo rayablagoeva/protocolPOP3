@@ -1,0 +1,44 @@
+body{
+   
+    margin: 0em;
+}
+html {
+ scroll-behavior: smooth;
+}
+.fas{
+    font-size: 40px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    color: #386929;
+  }
+  
+  .fas:hover{
+    color: #151f12;
+  }
+  .img_aboutUs{
+      margin-bottom: 2em;
+  }
+  .resource{
+      /* background-color: green; */
+      width: 50vw;
+      margin-left: 3em;
+      margin-right: 2em;
+      margin-top: 4em;
+      display:inline-block;
+      vertical-align: middle;
+  }
+  img{
+    
+      width: 30vw;
+      display:inline-block;
+      vertical-align: middle;
+      transform: rotate(10deg);
+  
+  }
+  .resource>ol > li{
+      margin-bottom: 1em;
+      font-size: 20px;
+  }
+  .resource>ol>li>a{
+      margin-bottom: 1em;
+  }

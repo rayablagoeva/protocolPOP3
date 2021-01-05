@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Padauk&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/headerOtherPages.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/model.css">
+    <link rel="icon" href="../images/icon.png"  type="image/x-icon">
+    <title>Моделът POP3 </title>
+   
+   
+</head>
+<body>
+    <header name="top">
+        <ul class="main-menu">
+        
+          <li class="menu_optional sub"><a class="active" href="../index.html" title="Начало">Начало</a></li>
+          <li class="menu_optional"><a class="non-active" href="../pages/resource.html"  title="Ресурси">Използвани ресурси</a></li>
+          <li class="menu_optional home"><a class="non-active"  href="../pages/contact.html"  title="Kонтакти">Контакти</a></li>
+        </ul>
+  </header>
+  <hr>
+  <main class="main">
+    <div class="img_aboutUs">
+        <h1>Моделът POP3</h1>
+    </div>
+    <!-- <div class ="model"></div> -->
+    <div class = "desc">
+        <h3 class="pop">Моделът POP3 /модел клиент-сървър/</h3>
+        <hr>
+        <p>POP3 сървърът стартира услугата, очаквайки устанояване на връзка на порт 110. <br>
+            <br>
+            Клиентът, желаещ да използва услугата, устанояване ТCP връзка със сървъра, който му изпраща приветстващо  съобщение. <br>
+            <br>
+            В последствие  клиентът  и сървърът  обменят команди и отговори, докато връзката бъде  прекратена.
+            
+        </p>
+        <img class="model" src="../images/pop3_model_diagram.png" alt="Diagram" title="Диаграма">
+
+
+    </div>
+    <div class="clear"></div>
+    <h3>Състояния, през които минава една POP3 сесия:
+      <hr>
+    </h3>
+    <div id="container">
+        <div class="whole">
+        <div class="type">
+            <p>Autorisation</p>
+            </div>
+        <div class="plan">
+    
+            <div class="header">
+              След като ТCP връзката е установена и POP3 сървърът е изпратил приветстващо съобщение, сесията влиза в състояние  <b>"Одобрение"</b> <br>
+              В това състояние клиентът трябва да се представи, за да бъде одобрен и допуснат до съотвените ресурси от страна на сървъра.
+            </div>
+            
+        </div>
+    </div>
+        <div class="whole">
+            <div class="type ">
+            <p>Transaction</p>
+            </div>
+        <div class="plan">
+    
+            <div class="header">
+              В това състояние се влиза при успешно одобрение. Клиентът получава достъп до пощенска си кутия. Всяко писмо има идентификационен номер и размер в байтове. В този етап на сесията клиентът има възможност да проверява, чете и изтрива писма от пощенската си кутия.   
+            </div>
+        </div>
+    </div>
+    
+        <div class="whole ">
+            <div class="type">
+            <p>Update</p>
+            </div>
+        <div class="plan">
+    
+            <div class="header">
+              В това състояние се влиза след като клиентът е изпратил командата QUIT на съръвра. Сървърт се грижи да обнови съдържанието на пощенската кутия, освобождава предоставените ресурси и прекъсва TCP връзката.
+                
+            </div>
+        </div>
+    </div>
+    <div class="clear"></div>
+    
+    </main>
+    <div class="arrow">
+      <a href="../index.html" title="Kъм началото"><i class="fas fa-arrow-circle-left"></i></a>
+    <a href="#top" title="Нагоре" > <i class="fas fa-arrow-circle-up"></i></a>
+    <a href="../pages/commands.html" title="Kъм командите" ><i class="fas fa-arrow-circle-right"></i></a>
+    
+    </div>
+    
+   
+  <footer>
+    <div class="conteiner">
+       <p class="conteiner_item name">POP3</p>
+       <p class=" conteiner_item copy-right">2020<span class="name_author">Рая Благоева</span> </p>
+       <div class="icons">
+          <a href="https://www.facebook.com/raq.blagoeva" title="Facebook" target="_blank"><i class="icon fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/raiablagoeva/" title="Instagram" target="_blank"><i class="icon fab fa-instagram"></i></a>
+          <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJNvNQnkgrwRzsvNhzljLTBNQgWSrrKvnZtZMVHwmdzPRdXHGjPncZHRVkTVvkjrCLZHKsq" title="Mail" target="_blank"><i class="icon far fa-envelope"></i></a>
+       </div> 
+    </div>
+ </footer>
+</body>
+</html>

@@ -1,0 +1,51 @@
+body{
+   
+    margin: 0em;
+}
+html {
+ scroll-behavior: smooth;
+}
+.logo{
+   width: 20vw;
+   height: 40vh;
+   margin: 0 auto;
+}
+.logo img {
+   width: 20vw;
+   height: 40vh;
+   margin: 0 auto;
+}
+.fas{
+ font-size: 40px;
+ margin-top: 1em;
+ margin-bottom: 1em;
+ color: #386929;
+}
+
+.fas:hover{
+ color: #151f12;
+}
+
+.img_aboutUs{
+   margin-bottom: 2em;
+}
+.info p {
+   width: 75vw;
+   margin: 1em auto;
+   margin-bottom:20px ;
+   font-size: 35px;
+   text-align: center;
+   text-transform: uppercase;
+   letter-spacing: 3px;
+   color: rgb(8, 88, 8);
+}
+.info p:nth-child(3){
+   margin: 2px auto;
+   font-size: 30px;
+   text-transform: none;
+}
+.info p:nth-child(5),p:nth-child(4){
+   margin: 2px auto;
+   font-size: 30px;
+   text-transform: none;
+}
